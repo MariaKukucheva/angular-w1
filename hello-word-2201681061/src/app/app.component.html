@@ -1,20 +1,17 @@
-<details name="info">
-    <summary>Информация за мен</summary>
-    <p>Казвам се Мария Кукучева и съм втори курс студентка в ПУ"Паисий Хилендарски" със специалност СТД.</p>
-</details>
-<details name="info">
-    <summary>Хобита и интереси</summary>
-    <p>Обичам да спортувам и да рисувам!</p>
-</details>
-<details name="info">
-    <summary>Линк към любим content creator,</summary>
-    <p>Silvie Mahdal e художниuк, който изпипва всичко до най-малкия дeтайл! <a href="https://www.youtube.com/@silviemahdal3570">Линк към нейния прфил</a></p>
-</details>
-<details name="info">
-    <summary>Информация за моя канал</summary>
-    <p>В моя канал ще се научите как да рисувате и да се усъвършенствате, освен това ще имате другарче с което да творите!</p>
-</details>
-<details name="info">
-    <summary>Моите услуги</summary>
-    <p>Освен онлайн уроци предлагам и персонализирани консултации, които са скромните - 10лв на час.</p>
-</details>
+<div>
+    <h1 (click)="toggleSection(1)">{{titleForMe}}</h1>
+    <p *ngIf="p1">{{forMe}}</p>
+  
+    <h1 (click)="toggleSection(2)">{{titleHobby}}</h1>
+    <p *ngIf="p2">{{hobby}}</p>
+  
+    <h1 (click)="toggleSection(3)">{{titleCreator}}</h1>
+    <p *ngIf="p3">{{creator}} <a href="https://www.youtube.com/@silviemahdal3570">Линк към нейния прфил</a></p>
+  
+    <h1 (click)="toggleSection(4)">{{titleVideo}}</h1>
+    <p *ngIf="p4">{{video}}</p>
+  
+    <h1 (click)="toggleSection(5)">{{titlePrice}}</h1>
+    <p *ngIf="p5">{{price}}</p>
+  </div>
+  
